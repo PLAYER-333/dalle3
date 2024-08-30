@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DALL·E 3 Image Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DALL·E 3 Image Editor</h1>
+        <form id="imageForm">
+            <label for="prompt">Enter your prompt:</label>
+            <input type="text" id="prompt" name="prompt" required>
+
+            <label for="imageUpload">Upload an image (optional):</label>
+            <input type="file" id="imageUpload" accept="image/*">
+
+            <button type="submit">Generate or Edit Image</button>
+        </form>
+        <div id="imageContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
